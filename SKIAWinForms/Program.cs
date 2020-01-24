@@ -2,6 +2,7 @@
 using SkiaSharp.Views.Desktop;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Linq;
@@ -10,6 +11,7 @@ using System.Windows.Forms;
 
 namespace SkiaWinForms
 {
+    [DesignerCategory("Code")]
     class DesktopForm : Form
     {
         readonly Bitmap _bitmap;
@@ -34,6 +36,7 @@ namespace SkiaWinForms
         }
     }
 
+    [DesignerCategory("Code")]
     class MainForm : Form
     {
         readonly Bitmap _screenshot;
